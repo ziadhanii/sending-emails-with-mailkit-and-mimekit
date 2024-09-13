@@ -1,42 +1,57 @@
+# .NET Email Sending
 
-<h1 id="title">.NET Email Sending </h1>
+A .NET example for sending emails using MailKit and MimeKit. This project demonstrates how to:
 
-<p id="description">A .NET example for sending emails using MailKit and MimeKit. This project demonstrates how to:</p>
-<ul>
-  <li>Send basic email messages</li>
-  <li>Attach files</li>
-  <li>Send HTML content</li>
-</ul>
+*   Send basic email messages
+*   Attach files
+*   Send HTML content
 
-<h2>🧐 Features</h2>
-<p>Here're some of the project's best features:</p>
-<ul>
-  <li>Easy-to-follow examples</li>
-  <li>Asynchronous email sending</li>
-</ul>
+## 🧐 Features
 
-<h2>🛠️ Installation Steps:</h2>
+Here are some of the project's best features:
 
-<p>1. Clone the Repository</p>
-<pre><code>git clone https://github.com/ziadhanii/sending-emails-with-mailkit-and-mimekit.git</code></pre>
+*   Easy-to-follow examples
+*   Asynchronous email sending
 
-<p>2. Install Dependencies</p>
-<pre><code>dotnet restore</code></pre>
+## 🛠️ Installation Steps:
 
-<p>3. Configure Email Settings</p>
-<pre><code>{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/ziadhanii/sending-emails-with-mailkit-and-mimekit.git
+    ```
+
+2. **Install Dependencies**
+
+    ```bash
+    dotnet restore
+    ```
+
+3. **Configure Email Settings**
+
+    Update the `appsettings.json` file with your email server details:
+
+    ```json
+    {
+      "Logging": {
+        "LogLevel": {
+          "Default": "Information",
+          "Microsoft.AspNetCore": "Warning"
+        }
+      },
+      "AllowedHosts": "*",
+      "EmailSettings": {
+        "Host": "smtp.gmail.com",
+        "Port": 587,
+        "SenderName": "Your Name",
+        "Email": "your-email", // **Ensure to enter your email here**
+        "Password": "your-email-password" // **Ensure to enter your password here**
+      }
     }
-  },
-  "AllowedHosts": "*",
-  "EmailSettings": {
-    "Host": "smtp.gmail.com",
-    "Port": 587,
-    "SenderName": "Your Name",
-    "Email": "your-email", // **تأكد من إدخال الايميل هنا**
-    "Password": "your-email-password" // **تأكد من إدخال كلمة المرور هنا**
-  }
-}</code></pre>
+    ```
+
+## 📸 Screenshot
+
+Here is a screenshot of the project:
+
+![Screenshot](Screenshot%202024-09-13%20044231.png "Screenshot")
